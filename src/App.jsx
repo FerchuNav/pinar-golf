@@ -5,7 +5,7 @@ import Features      from './sections/Features/Features'
 import Gallery       from './sections/Gallery/Gallery'
 import Rooms         from './sections/Rooms/Rooms'
 import Amenities     from './sections/Amenities/Amenities'
-import WinterBanner  from './sections/WinterBanner/WinterBanner'
+import Experiences   from './sections/Experiences/Experiences'
 import Comparison    from './sections/Comparison/Comparison'
 import Reviews       from './sections/Reviews/Reviews'
 import Booking       from './sections/Booking/Booking'
@@ -32,7 +32,7 @@ export default function App() {
         <Gallery />
         <Rooms />
         <Amenities />
-        <WinterBanner />
+        <Experiences />
         <Comparison />
         <Reviews />
         <Booking />
