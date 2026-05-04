@@ -1,18 +1,12 @@
 .wrap{background:var(--dark);position:relative}
 .wrap::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(to right,transparent,var(--gold),transparent)}
-.hdr{margin-bottom:3rem}
+.hdr{margin-bottom:2.5rem}
 .h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:600;color:white;line-height:1.15}
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2rem}
-.card{background:var(--charcoal);border-radius:24px;overflow:hidden;border:1px solid rgba(200,151,58,.1);transition:transform .3s var(--ease),border-color .3s}
-.card:hover{transform:translateY(-6px);border-color:rgba(200,151,58,.35)}
-.imgWrap{height:280px;position:relative;overflow:hidden}
-.img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease)}
-.card:hover .img{transform:scale(1.05)}
-.tag{position:absolute;top:1rem;left:1rem;background:var(--gold);color:var(--forest);font-size:.75rem;font-weight:600;padding:.28rem .8rem;border-radius:999px}
-.body{padding:1.75rem}
-.name{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.75rem;font-weight:600;color:white;margin-bottom:1.25rem;margin-top:.2rem}
-.feats{list-style:none;display:flex;flex-direction:column;gap:.45rem;margin-bottom:1.5rem}
-.feat{display:flex;align-items:flex-start;gap:.55rem;font-size:.88rem;color:rgba(255,255,255,.68)}
-.check{color:var(--gold);font-weight:700;font-size:.85rem;flex-shrink:0;margin-top:.1rem}
+.sub{color:rgba(255,255,255,.65);font-size:1.05rem;max-width:720px;line-height:1.6}
+.info{background:var(--charcoal);border-radius:24px;padding:2.5rem;border:1px solid rgba(200,151,58,.1)}
+.features{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem;margin-bottom:2rem}
+.feat{display:flex;align-items:center;gap:.75rem;font-size:.95rem;color:rgba(255,255,255,.8);padding:.65rem 1rem;background:rgba(255,255,255,.04);border-radius:12px}
+.featIcon{font-size:1.2rem;flex-shrink:0}
+.note{color:rgba(255,255,255,.55);font-size:.92rem;text-align:center;margin-bottom:1.5rem}
 .cta{width:100%;justify-content:center}
-@media(max-width:768px){.grid{grid-template-columns:1fr}.imgWrap{height:220px}}
+@media(max-width:768px){.features{grid-template-columns:1fr}.info{padding:1.5rem}}

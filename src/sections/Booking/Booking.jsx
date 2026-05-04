@@ -4,12 +4,12 @@ import s from './Booking.module.css'
 const today = () => new Date().toISOString().split('T')[0]
 
 export default function Booking() {
-  const [f, setF] = useState({ci:'',co:'',cab:'Suite Garden (1 dormitorio)',hues:'2 personas',nom:'',masc:'No'})
+  const [f, setF] = useState({ci:'',co:'',hues:'2 personas',nom:'',masc:'No'})
   const set = k => e => setF(v => ({...v,[k]:e.target.value}))
 
   const send = () => {
     if (!f.ci||!f.co||!f.nom.trim()) { alert('⚠️ Por favor completá tu nombre y las fechas.'); return }
-    const msg = `Hola Lucas! 👋 Quisiera hacer una reserva:\n\n🏡 Cabaña: ${f.cab}\n📅 Check-in: ${f.ci}\n📅 Check-out: ${f.co}\n👥 Huéspedes: ${f.hues}\n🐾 Mascota: ${f.masc}\n👤 Nombre: ${f.nom}\n\n¿Tienen disponibilidad?`
+    const msg = `Hola Lucas! 👋 Quisiera hacer una reserva:\n\n📅 Check-in: ${f.ci}\n📅 Check-out: ${f.co}\n👥 Huéspedes: ${f.hues}\n🐾 Mascota: ${f.masc}\n👤 Nombre: ${f.nom}\n\n¿Tienen disponibilidad?`
     window.open(`https://wa.me/5492914260589?text=${encodeURIComponent(msg)}`,'_blank')
   }
 
@@ -18,7 +18,7 @@ export default function Booking() {
       <div className="container">
         <div className={`reveal ${s.hdr}`}>
           <span className="gold-line"/>
-          <p className="label" style={{color:'rgba(255,255,255,.45)',marginBottom:'.5rem'}}>Sin comisiones · Sin intermediarios</p>
+          <p className="label" style={{color:'rgba(255,255,255,.45)',marginBottom:'.5rem'}}>5 Cabañas + 1 Departamento · Sin comisiones · Sin intermediarios</p>
           <h2 className={s.h2}>Reservá tu estadía</h2>
           <p className={s.sub}>Completá el formulario y Lucas te confirma disponibilidad al instante por WhatsApp.</p>
         </div>
@@ -26,19 +26,13 @@ export default function Booking() {
           <div className={s.row}>
             <Fld label="📅 Check-in"><input type="date" value={f.ci} min={today()} onChange={set('ci')}/></Fld>
             <Fld label="📅 Check-out"><input type="date" value={f.co} min={f.ci||today()} onChange={set('co')}/></Fld>
-            <Fld label="🏡 Cabaña">
-              <select value={f.cab} onChange={set('cab')}>
-                <option>Suite Garden (1 dormitorio)</option>
-                <option>Dúplex Ventana (2 dormitorios)</option>
-              </select>
-            </Fld>
-          </div>
-          <div className={s.row}>
             <Fld label="👥 Huéspedes">
               <select value={f.hues} onChange={set('hues')}>
                 {['1 persona','2 personas','3 personas','4 personas','5 personas','6 personas'].map(o=><option key={o}>{o}</option>)}
               </select>
             </Fld>
+          </div>
+          <div className={s.row}>
             <Fld label="👤 Tu nombre"><input type="text" placeholder="Nombre y apellido" value={f.nom} onChange={set('nom')}/></Fld>
             <Fld label="🐾 ¿Mascota?">
               <select value={f.masc} onChange={set('masc')}>
