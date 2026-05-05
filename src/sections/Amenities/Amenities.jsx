@@ -86,9 +86,9 @@ export default function Amenities() {
           ))}
         </div>
 
-        <div className={`stagger ${s.grid}`}>
+        <div className={s.grid} key={active}>
           {activeCat.items.map((item,i) => (
-            <div key={item.t} className={`reveal ${s.chip}`} style={{transitionDelay:`${i*.08}s`}}>
+            <div key={item.t} className={`${s.chip} ${s.fadeIn}`} style={{animationDelay:`${i*.07}s`}}>
               <span className={s.chipIcon}>{item.icon}</span>
               <div>
                 <p className={s.chipTitle}>{item.t}</p>
