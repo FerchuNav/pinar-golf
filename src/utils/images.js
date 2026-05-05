@@ -34,6 +34,11 @@ export const IMAGES = {
     { id:'ext-08', src:'/images/exterior/picnic-arbol.jpg',             alt:'Mesa de picnic bajo árbol centenario',                      label:'Parque',               featured:false },
     { id:'ext-09', src:'/images/exterior/nieve-02.jpg',                 alt:'Piscina y jacuzzi con nieve — invierno 2025',              label:'Nieve',                featured:true  },
     { id:'ext-10', src:'/images/exterior/ventana-flores.jpg',           alt:'Ventana con flores y vista al jardín',                      label:'Vista desde la cabaña',featured:false },
+    { id:'ext-11', src:'/images/exterior/pileta.jpg',                    alt:'Piscina al aire libre en el parque',                        label:'Pileta Exterior',      featured:true  },
+    { id:'ext-12', src:'/images/exterior/juegos-infantiles.jpg',         alt:'Juegos infantiles en el parque',                            label:'Parque Infantil',      featured:false },
+    { id:'ext-13', src:'/images/exterior/juegos-exterior-01.jpg',       alt:'Juegos exteriores de madera',                               label:'Juegos',               featured:false },
+    { id:'ext-14', src:'/images/exterior/juegos-exterior-02.jpg',       alt:'Juegos exteriores — detalle',                               label:'Juegos',               featured:false },
+    { id:'ext-15', src:'/images/exterior/metegol-01.jpg',               alt:'Metegol en el área de juegos exterior',                     label:'Metegol',              featured:false },
   ],
   interior: [
     { id:'int-01', src:'/images/interior/dormitorio-01.jpg',    alt:'Dormitorio con cama doble y ventanal con vista a la piscina', label:'Dormitorio',      featured:true  },
@@ -42,12 +47,14 @@ export const IMAGES = {
     { id:'int-04', src:'/images/interior/living-02.jpg',        alt:'Living con sillón y acceso al deck exterior',               label:'Living',          featured:false },
     { id:'int-05', src:'/images/interior/cocina-01.jpg',        alt:'Cocina con barra americana, taburetes y muebles modernos',  label:'Cocina',          featured:true  },
     { id:'int-06', src:'/images/interior/bano-01.jpg',          alt:'Baño moderno con toallero calefactor y porcelanato',        label:'Baño',            featured:true  },
+    { id:'int-07', src:'/images/interior/fogon.jpg',             alt:'Fogón interior — calefacción y ambiente',                   label:'Fogón',           featured:false },
   ],
   amenities: [
     { id:'ame-01', src:'/images/amenities/quincho-interior.jpg', alt:'Quincho cerrado con mesas de madera y TV', label:'Quincho',       featured:true  },
     { id:'ame-02', src:'/images/amenities/parrilla-quincho.jpg', alt:'Parrilla del quincho — fogón amplio',      label:'Parrilla',      featured:true  },
     { id:'ame-03', src:'/images/amenities/cocina-quincho.jpg',   alt:'Cocina del quincho — mesada equipada',     label:'Cocina Quincho',featured:false },
     { id:'ame-04', src:'/images/amenities/metegol.jpg',          alt:'Metegol en el quincho',                    label:'Metegol',       featured:false },
+    { id:'ame-05', src:'/images/amenities/fachada-bicicletas.jpg', alt:'Fachada con bicicletas del complejo',      label:'Fachada',       featured:false },
   ],
 }
 
