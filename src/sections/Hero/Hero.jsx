@@ -2,7 +2,7 @@ import s from './Hero.module.css'
 
 const STATS = [
   {v:'8.7', l:'Booking.com'},
-  {v:'5',   l:'Cabañas exclusivas'},
+  {v:'5+1', l:'Cabañas + Dpto'},
   {v:'365', l:'Días al año'},
   {v:'24hs',l:'Piscina climatizada'},
 ]
@@ -25,7 +25,7 @@ export default function Hero() {
           Tu refugio en el<br/><em>corazón</em> de la Comarca
         </h1>
         <p className={s.sub}>
-          5 cabañas de diseño premium con piscina climatizada 24hs,
+          5 cabañas + 1 departamento de diseño premium con piscina climatizada 24hs,
           jacuzzi y el Parque Tornquist a pasos de tu puerta.
         </p>
         <div className={s.btns}>

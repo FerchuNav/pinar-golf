@@ -13,7 +13,7 @@ export default function Footer() {
         <div>
           <p className={s.brand}>Pinar Golf</p>
           <p className={s.brandSub}>Cabañas Resort · Sierra de la Ventana</p>
-          <p className={s.desc}>5 cabañas exclusivas con tecnología Retak, piscina climatizada 24hs y concierge local en el Barrio Parque Golf.</p>
+          <p className={s.desc}>5 cabañas + 1 departamento con tecnología Retak, piscina climatizada 24hs y atención directa en el Barrio Parque Golf.</p>
         </div>
         <div>
           <p className={s.colTitle}>Navegación</p>

@@ -2,7 +2,7 @@ import s from './Features.module.css'
 const DATA = [
   {icon:'🏗',title:'Construcción Retak',desc:'Hormigón celular autoclave con inercia térmica superior. Adentro siempre la temperatura perfecta sin importar el clima serrano.'},
   {icon:'🏊',title:'Piscina 24 horas',desc:'Piscina cubierta climatizada disponible todo el día, todo el año. La lluvia y la nieve no interrumpen tu descanso.'},
-  {icon:'🔒',title:'Solo 5 cabañas',desc:'Máxima privacidad en el exclusivo Barrio Parque Golf. Sin multitudes, sin ruido — solo vos y la naturaleza.'},
+  {icon:'🔒',title:'Solo 5 cabañas + 1 dpto',desc:'Máxima privacidad en el exclusivo Barrio Parque Golf. Sin multitudes, sin ruido — solo vos y la naturaleza.'},
   {icon:'🐾',title:'Pet-Friendly',desc:'Tu mascota es parte de la familia. Limpieza impecable para que todos disfruten sin restricciones.'},
   {icon:'⚡',title:'Cargador Eléctrico',desc:'Pioneros en la región: cargador para vehículos eléctricos e híbridos incluido para el viajero contemporáneo.'},
   {icon:'🛡',title:'Habilitación Legal',desc:'Habilitación Municipal N° 000695. Alarmas monitoreadas y caja de seguridad individual en cada cabaña.'},
