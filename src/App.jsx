@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import Navbar        from './components/Navbar/Navbar'
 import Hero          from './sections/Hero/Hero'
 import Features      from './sections/Features/Features'
@@ -14,17 +14,33 @@ import Footer        from './components/Footer/Footer'
 import WhatsAppFloat from './components/WhatsAppFloat/WhatsAppFloat'
 
 export default function App() {
+  const [scroll, setScroll] = useState(0)
+
+  useEffect(() => {
+    const onScroll = () => {
+      const h = document.documentElement.scrollHeight - window.innerHeight
+      setScroll(h > 0 ? window.scrollY / h : 0)
+    }
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
   useEffect(() => {
     const io = new IntersectionObserver(
       entries => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target) } }),
-      { threshold: 0.1 }
+      { threshold: 0.08, rootMargin: '0px 0px -40px 0px' }
     )
-    document.querySelectorAll('.reveal').forEach(el => io.observe(el))
+    const observe = () => {
+      document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale')
+        .forEach(el => io.observe(el))
+    }
+    observe()
     return () => io.disconnect()
   }, [])
 
   return (
     <>
+      <div style={{position:'fixed',top:0,left:0,height:3,background:'linear-gradient(90deg,var(--gold),var(--gold-light))',width:`${scroll*100}%`,zIndex:9999,transition:'width .1s linear'}}/>
       <Navbar />
       <main>
         <Hero />

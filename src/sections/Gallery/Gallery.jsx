@@ -29,9 +29,9 @@ export default function Gallery() {
             </button>
           ))}
         </div>
-        <div className={s.grid}>
+        <div className={`stagger ${s.grid}`}>
           {imgs.map((img,i) => (
-            <div key={img.id} className={`${s.item} ${i===0?s.featured:''}`} onClick={() => setLb(img)}>
+            <div key={img.id} className={`reveal-scale ${s.item} ${i===0?s.featured:''}`} style={{transitionDelay:`${i*.07}s`}} onClick={() => setLb(img)}>
               <img src={img.src} alt={img.alt} loading="lazy" className={s.img}/>
               <div className={s.overlay}>
                 <span className={s.imgLabel}>{img.label}</span>

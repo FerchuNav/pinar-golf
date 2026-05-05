@@ -17,9 +17,9 @@ export default function Features() {
           <h2 className={s.h2}>Ingeniería del confort</h2>
           <p className={s.sub}>Diseñado bajo estándares constructivos que trascienden la cabaña tradicional — cálido en verano, abrigado en invierno.</p>
         </div>
-        <div className={s.grid}>
+        <div className={`stagger ${s.grid}`}>
           {DATA.map((f,i) => (
-            <div key={f.title} className={`reveal ${s.card}`} style={{transitionDelay:`${i*.08}s`}}>
+            <div key={f.title} className={`reveal ${s.card}`} style={{transitionDelay:`${i*.1}s`}}>
               <div className={s.icon}>{f.icon}</div>
               <h3 className={s.cardTitle}>{f.title}</h3>
               <p className={s.cardDesc}>{f.desc}</p>

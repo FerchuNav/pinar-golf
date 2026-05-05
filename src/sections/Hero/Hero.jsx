@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import s from './Hero.module.css'
 
 const STATS = [
@@ -8,12 +9,22 @@ const STATS = [
 ]
 
 export default function Hero() {
+  const [y, setY] = useState(0)
+
+  useEffect(() => {
+    const onScroll = () => setY(window.scrollY)
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
   return (
     <section className={s.hero} id="inicio">
-      <video className={s.video} autoPlay muted loop playsInline preload="auto"
-        poster="/images/exterior/vista-aerea.jpg">
-        <source src="/images/hero-video.mp4" type="video/mp4" />
-      </video>
+      <div className={s.videoWrap} style={{transform:`translateY(${y*.35}px)`}}>
+        <video className={s.video} autoPlay muted loop playsInline preload="auto"
+          poster="/images/exterior/vista-aerea.jpg">
+          <source src="/images/hero-video.mp4" type="video/mp4" />
+        </video>
+      </div>
       <div className={s.overlay}/>
       <div className={`container ${s.content}`}>
         <div className={s.badge}>

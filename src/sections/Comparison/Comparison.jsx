@@ -16,16 +16,16 @@ export default function Comparison() {
           <p className="label" style={{color:'var(--forest-light)',marginBottom:'.5rem'}}>Comparativa</p>
           <h2 className={s.h2}>Cabaña tradicional vs<br/>Pinar Golf · Tecnología Retak</h2>
         </div>
-        <div className={`reveal ${s.tableWrap}`}>
+        <div className={s.tableWrap}>
           <table className={s.table}>
             <thead><tr>
               <th>Característica</th>
               <th><span style={{color:'rgba(255,255,255,.55)',fontStyle:'italic'}}>Cabaña tradicional</span></th>
               <th><span style={{color:'var(--gold-light)'}}>Pinar Golf · Retak</span></th>
             </tr></thead>
-            <tbody>
-              {ROWS.map(r => (
-                <tr key={r.f}>
+            <tbody className="stagger">
+              {ROWS.map((r, i) => (
+                <tr key={r.f} className="reveal" style={{transitionDelay:`${i*.08}s`}}>
                   <td className={s.feat}>{r.f}</td>
                   <td><span className={s.bad}>✗</span> {r.trad}</td>
                   <td><span className={s.good}>✓</span> {r.pg}</td>

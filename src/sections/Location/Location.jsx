@@ -10,7 +10,7 @@ export default function Location() {
           <p className={s.sub}>En el corazón del Barrio Parque Golf, el polo de exclusividad de Sierra de la Ventana.</p>
         </div>
         <div className={s.grid}>
-          <div className={`reveal ${s.info}`}>
+          <div className={`reveal-left ${s.info}`}>
             <InfoItem icon="📍" title="Dirección">
               Av. Sauce Grande y Los Picaflores<br/>
               Barrio Parque Golf, Sierra de la Ventana<br/>
@@ -39,7 +39,7 @@ export default function Location() {
               📍 Abrir en Google Maps
             </a>
           </div>
-          <div className={`reveal ${s.mapWrap}`}>
+          <div className={`reveal-right ${s.mapWrap}`}>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6535.2!2d-62.0058!3d-38.1275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95edde1d1c2c2b1d%3A0x0!2sSierra+de+la+Ventana%2C+Buenos+Aires!5e0!3m2!1ses!2sar!4v1700000000000!5m2!1ses!2sar"
               title="Pinar Golf — Sierra de la Ventana"

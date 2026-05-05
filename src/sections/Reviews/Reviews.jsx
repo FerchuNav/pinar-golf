@@ -13,9 +13,9 @@ export default function Reviews() {
           <p className="label" style={{color:'var(--forest-light)',marginBottom:'.5rem'}}>Lo que dicen nuestros huéspedes</p>
           <h2 className={s.h2}>Reseñas verificadas</h2>
         </div>
-        <div className={s.grid}>
+        <div className={`stagger ${s.grid}`}>
           {REVIEWS.map((r,i) => (
-            <div key={r.name} className={`reveal ${s.card}`} style={{transitionDelay:`${i*.1}s`}}>
+            <div key={r.name} className={`reveal ${s.card}`} style={{transitionDelay:`${i*.12}s`}}>
               <div className={s.stars}>{'★'.repeat(r.stars)}</div>
               <blockquote className={s.quote}>"{r.text}"</blockquote>
               <div className={s.author}>

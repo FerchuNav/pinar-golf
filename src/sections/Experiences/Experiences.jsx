@@ -19,9 +19,9 @@ export default function Experiences() {
           <h2 className={s.h2}>Experiencias en la Comarca</h2>
           <p className={s.sub}>Sierra de la Ventana es mucho más que cabañas. Descubrí actividades para todos los gustos a minutos de tu puerta.</p>
         </div>
-        <div className={s.grid}>
+        <div className={`stagger ${s.grid}`}>
           {EXPERIENCES.map((e,i) => (
-            <div key={e.title} className={`reveal ${s.card}`} style={{transitionDelay:`${i*.08}s`}}>
+            <div key={e.title} className={`reveal ${s.card}`} style={{transitionDelay:`${i*.1}s`}}>
               <div className={s.imgWrap}>
                 <img src={e.img} alt={e.title} loading="lazy" className={s.img}/>
               </div>

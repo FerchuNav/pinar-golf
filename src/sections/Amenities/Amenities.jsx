@@ -24,17 +24,17 @@ export default function Amenities() {
           <h2 className={s.h2}>Servicios y amenities</h2>
           <p className={s.sub}>Un micro-ecosistema de disfrute, independientemente del clima o la estación del año.</p>
         </div>
-        <div className={`reveal ${s.photos}`}>
-          {PHOTOS.map(p => (
-            <div key={p.src} className={`${s.photo} ${p.wide?s.wide:''}`}>
+        <div className={`stagger ${s.photos}`}>
+          {PHOTOS.map((p, i) => (
+            <div key={p.src} className={`reveal-scale ${s.photo} ${p.wide?s.wide:''}`} style={{transitionDelay:`${i*.12}s`}}>
               <img src={p.src} alt={p.alt} loading="lazy" className={s.pImg}/>
               <div className={s.pLabel}>{p.alt}</div>
             </div>
           ))}
         </div>
-        <div className={s.chips}>
+        <div className={`stagger ${s.chips}`}>
           {CHIPS.map((c,i) => (
-            <div key={c.t} className={`reveal ${s.chip}`} style={{transitionDelay:`${i*.06}s`}}>
+            <div key={c.t} className={`reveal ${s.chip}`} style={{transitionDelay:`${i*.08}s`}}>
               <span className={s.chipIcon}>{c.icon}</span>
               <div>
                 <p className={s.chipTitle}>{c.t}</p>
