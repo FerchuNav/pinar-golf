@@ -9,7 +9,7 @@ export default function Booking() {
 
   const send = () => {
     if (!f.ci||!f.co||!f.nom.trim()) { alert('⚠️ Por favor completá tu nombre y las fechas.'); return }
-    const msg = `Hola! 👋 Quisiera hacer una reserva:\n\n📅 Check-in: ${f.ci}\n📅 Check-out: ${f.co}\n👥 Huéspedes: ${f.hues}\n🐾 Mascota: ${f.masc}\n👤 Nombre: ${f.nom}\n\n¿Tienen disponibilidad?`
+    const msg = `Hola! Quisiera hacer una reserva:\n\nCheck-in: ${f.ci}\nCheck-out: ${f.co}\nHuespedes: ${f.hues}\nMascota: ${f.masc}\nNombre: ${f.nom}\n\nTienen disponibilidad?`
     window.open(`https://wa.me/5492914260589?text=${encodeURIComponent(msg)}`,'_blank')
   }
 
