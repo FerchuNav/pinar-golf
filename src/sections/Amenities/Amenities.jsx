@@ -13,7 +13,6 @@ const PHOTOS = [
   {src:'/images/pileta/pileta-cubierta-02.jpg',  alt:'Piscina cubierta climatizada', wide:true},
   {src:'/images/amenities/quincho-interior.jpg', alt:'Quincho cerrado con TV y mesas', wide:false},
   {src:'/images/amenities/parrilla-quincho.jpg', alt:'Parrilla del quincho', wide:false},
-  {src:'/images/pileta/jacuzzi-exterior.jpg',    alt:'Jacuzzi terapéutico', wide:true},
 ]
 export default function Amenities() {
   return (

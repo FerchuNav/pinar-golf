@@ -30,7 +30,7 @@ export default function Rooms() {
           <p className={s.note}>
             Consultanos por WhatsApp para conocer disponibilidad, precios y la unidad que mejor se adapte a tu grupo.
           </p>
-          <a href="https://wa.me/5492914260589?text=Hola%20Lucas!%20Quisiera%20conocer%20las%20caba%C3%B1as%20disponibles%20y%20precios." target="_blank" rel="noopener" className={`btn btn-gold ${s.cta}`}>
+          <a href="https://wa.me/5492914260589?text=Hola!%20Quisiera%20conocer%20las%20caba%C3%B1as%20disponibles%20y%20precios." target="_blank" rel="noopener" className={`btn btn-gold ${s.cta}`}>
             Consultar disponibilidad y precios
           </a>
         </div>

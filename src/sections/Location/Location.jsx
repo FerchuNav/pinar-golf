@@ -17,7 +17,7 @@ export default function Location() {
               Partido de Tornquist, Buenos Aires
             </InfoItem>
             <InfoItem icon="📱" title="WhatsApp directo">
-              <a href="https://wa.me/5492914260589" target="_blank" rel="noopener">+54 9 291 426-0589 (Lucas)</a>
+              <a href="https://wa.me/5492914260589" target="_blank" rel="noopener">+54 9 291 426-0589</a>
             </InfoItem>
             <InfoItem icon="🕐" title="Horarios">
               Check-in: 15:00 hs · Check-out: 10:00 hs

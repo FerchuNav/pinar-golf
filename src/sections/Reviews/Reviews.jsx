@@ -1,6 +1,6 @@
 import s from './Reviews.module.css'
 const REVIEWS = [
-  {ini:'MG',name:'Marcela G.',origin:'Buenos Aires · Familia con 2 hijos',stars:5,text:'Lucas nos asesoró en cada paseo y restaurante. El agua de la piscina a temperatura ideal aún con el frío serrano. Una experiencia que no esperábamos encontrar en la zona.'},
+  {ini:'MG',name:'Marcela G.',origin:'Buenos Aires · Familia con 2 hijos',stars:5,text:'Nos asesoraron en cada paseo y restaurante. El agua de la piscina a temperatura ideal aún con el frío serrano. Una experiencia que no esperábamos encontrar en la zona.'},
   {ini:'RV',name:'Roberto V.',origin:'Bahía Blanca · Pareja + mascota',stars:5,text:'La construcción Retak se nota enseguida: afuera el frío más intenso, adentro temperatura perfecta. Llegamos con nuestro perro y fue bienvenido sin problemas. Limpieza impecable.'},
   {ini:'LP',name:'Laura P.',origin:'Mar del Plata · Grupo de 5 amigos',stars:5,text:'El dúplex es increíble para grupos. Cada planta tiene su propio baño y el jacuzzi es el cierre perfecto después de subir el Cerro Ventana. Definitivamente volvemos.'},
 ]

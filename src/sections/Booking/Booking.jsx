@@ -9,7 +9,7 @@ export default function Booking() {
 
   const send = () => {
     if (!f.ci||!f.co||!f.nom.trim()) { alert('⚠️ Por favor completá tu nombre y las fechas.'); return }
-    const msg = `Hola Lucas! 👋 Quisiera hacer una reserva:\n\n📅 Check-in: ${f.ci}\n📅 Check-out: ${f.co}\n👥 Huéspedes: ${f.hues}\n🐾 Mascota: ${f.masc}\n👤 Nombre: ${f.nom}\n\n¿Tienen disponibilidad?`
+    const msg = `Hola! 👋 Quisiera hacer una reserva:\n\n📅 Check-in: ${f.ci}\n📅 Check-out: ${f.co}\n👥 Huéspedes: ${f.hues}\n🐾 Mascota: ${f.masc}\n👤 Nombre: ${f.nom}\n\n¿Tienen disponibilidad?`
     window.open(`https://wa.me/5492914260589?text=${encodeURIComponent(msg)}`,'_blank')
   }
 
@@ -20,7 +20,7 @@ export default function Booking() {
           <span className="gold-line"/>
           <p className="label" style={{color:'rgba(255,255,255,.45)',marginBottom:'.5rem'}}>5 Cabañas + 1 Departamento · Sin comisiones · Sin intermediarios</p>
           <h2 className={s.h2}>Reservá tu estadía</h2>
-          <p className={s.sub}>Completá el formulario y Lucas te confirma disponibilidad al instante por WhatsApp.</p>
+          <p className={s.sub}>Completá el formulario y te confirmamos disponibilidad al instante por WhatsApp.</p>
         </div>
         <div className={`reveal ${s.box}`}>
           <div className={s.row}>
