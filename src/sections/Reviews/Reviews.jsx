@@ -27,7 +27,7 @@ export default function Reviews() {
         </div>
         <div className={`reveal ${s.strip}`}>
           <div className={s.scores}>
-            <div className={s.score}><span className={s.scoreNum}>8.7</span><span className={s.scoreLbl}>Puntaje general<br/>Booking.com</span></div>
+            <div className={s.score}><span className={s.scoreNum}>8.8</span><span className={s.scoreLbl}>Puntaje general<br/>Booking.com</span></div>
             <div className={s.score}><span className={s.scoreNum}>9.4</span><span className={s.scoreLbl}>Ubicación &<br/>atención personalizada</span></div>
           </div>
           <a href="#reservar" className="btn btn-gold">Reservar ahora →</a>

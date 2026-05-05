@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import s from './Hero.module.css'
 
 const STATS = [
-  {v:'8.7', l:'Booking.com'},
+  {v:'8.8', l:'Booking.com'},
   {v:'5+1', l:'Cabañas + Dpto'},
   {v:'365', l:'Días al año'},
   {v:'24hs',l:'Piscina climatizada'},

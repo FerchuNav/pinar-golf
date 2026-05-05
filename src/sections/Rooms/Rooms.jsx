@@ -10,22 +10,23 @@ export default function Rooms() {
           <h2 className={s.h2}>5 Cabañas + 1 Departamento</h2>
           <p className={s.sub}>
             Todas las unidades cuentan con construcción Retak de alta eficiencia térmica,
-            piscina climatizada 24hs, jacuzzi, y acceso directo al Parque Tornquist.
+            2 piletas (cubierta climatizada + al aire libre), y acceso directo al Parque Tornquist.
             Diseñadas para parejas, familias y grupos que buscan el mejor descanso en la Comarca.
           </p>
         </div>
+
         <div className={`reveal ${s.info}`}>
           <div className={s.features}>
             <Feat icon="🛏" text="Dormitorios con sommier King Koil" />
-            <Feat icon="🛁" text="Bañera con hidromasaje privado" />
-            <Feat icon="🍳" text="Cocina completa equipada" />
+            <Feat icon="🛁" text="Baño privado con bidé y secador de pelo" />
+            <Feat icon="🍳" text="Cocina completa: hornalla, horno, microondas" />
             <Feat icon="🌡" text="Calefacción dual + Aire A/C" />
-            <Feat icon="🏊" text="Piscina climatizada 24hs" />
-            <Feat icon="💆" text="Jacuzzi terapéutico exterior" />
-            <Feat icon="🐾" text="Pet-friendly" />
+            <Feat icon="📺" text="TV de pantalla plana" />
+            <Feat icon="🛋" text="Zona de estar con sofá y sofá cama" />
+            <Feat icon="🐾" text="Pet-friendly · Gratis" />
             <Feat icon="🔒" text="Caja de seguridad individual" />
-            <Feat icon="📶" text="WiFi de alta velocidad" />
-            <Feat icon="🚗" text="Estacionamiento cubierto" />
+            <Feat icon="📶" text="WiFi gratis en todo el establecimiento" />
+            <Feat icon="🚗" text="Estacionamiento gratuito · Sin reserva" />
           </div>
           <p className={s.note}>
             Consultanos por WhatsApp para conocer disponibilidad, precios y la unidad que mejor se adapte a tu grupo.
